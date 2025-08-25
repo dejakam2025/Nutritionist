@@ -1,0 +1,7 @@
+.cont {
+    width: 1440px;
+    height: 3949px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background-color: #fff;
+}

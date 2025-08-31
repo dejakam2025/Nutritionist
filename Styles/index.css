@@ -114,7 +114,7 @@ summary {
     width: 100%;
     margin: 0 auto;
     padding: 0 1rem;
-    
+
     /* background-image: url("../assets/Images/apple.svg"); */
     /* background-repeat: initial; */
 
@@ -129,6 +129,7 @@ summary {
     padding-top: 40px;
     padding-right: 99px;
     border-radius: 20px;
+    flex-wrap: wrap;
 }
 
 .header__nav {
@@ -168,23 +169,35 @@ summary {
 
 
 .header__logo {
-
-
     width: 67px;
     height: 55px;
 }
 
 .header__logo-name {
-    display: flex;
+    flex-direction: column;
+}
+
+
+.header__logo-nameEN {
+    align-items: center;
+    font-family: "Dana";
+    font-weight: 700;
+    line-height: normal;
+    color: #000;
+    font-size: 19px;
+
+}
+
+
+.header__logo-nameFA {
+    /* display: flex; */
     align-items: center;
     font-family: "Dana";
     font-weight: 400;
     line-height: normal;
     color: #000;
-    font-size: 13px;
-    font-weight: 400;
+    font-size: 12px;
 
-    /* position: relative; */
 }
 
 .header__register {
@@ -226,20 +239,24 @@ summary {
     align-items: center;
     margin-top: 70px;
     margin-left: 150px;
+    margin-right: 250px;
     gap: 10px;
 }
 
 .banner__content--profile {
-    filter: drop-shadow(0 14px 31px hsla(161, 58%, 44%, 0.57))
-        /*(-13.923px -20.71px / 120.906% 158.362% #2FB188); */
+    filter: drop-shadow(0 14px 31px hsla(161, 58%, 44%, 0.57));
+    /*(-13.923px -20.71px / 120.906% 158.362% #2FB188); */
+    position: relative;
 }
 
 
 .banner__content--circle1 {
+    position: absolute;
     width: 12px;
     height: 12px;
     border-radius: 50%;
     background-color: var(--main-color);
+    margin-left: 614px;
 }
 
 
@@ -260,15 +277,17 @@ summary {
 
 .banner__content--title1 {
     color: var(--main-color);
-    font-family: "YekanBakh";
+    font-family: "Dana";
     font-weight: 400;
+    font-size: 18px;
+    position: absolute;
+    margin-right: -140px;
+
 }
 
 .banner__content--taghziye {
-    padding-left: 120px;
+    height: 70px;
 }
-
-
 
 .banner__content--circle2 {
     width: 12px;
@@ -293,17 +312,144 @@ summary {
         96px 0 rgba(193, 193, 193, 1),
         120px 0 rgba(193, 193, 193, 1);
 
-    /* margin: 0 10px; */
+    margin-right: 110px;
 }
 
-.banner__content--varzesh {
-    /* margin-left: 190px; */
-    /* padding-left: 50px; */
-    padding-right: 120px;
-}
 
 .banner__content--title2 {
     color: #FF4E78;
-    font-family: "YekanBakh";
+    font-family: "Dana";
     font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 28px;
+    position: absolute;
+    margin-right: 140px;
+}
+
+.banner__content--varzesh {
+    height: 70px;
+}
+
+.banner__content--text {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 440px;
+    height: 184px;
+    font-family: "Dana";
+    font-weight: 400;
+    font-size: 47px;
+    color: #252525;
+    margin-top: 20px;
+    gap: 20px;
+    margin-right: 30%;
+}
+
+
+
+
+/* کادر سبز با نقطه های کنارش */
+
+.banner__content--text1 {
+    position: relative;
+    width: 364px;
+    height: 86px;
+    border: 3px solid #252525;
+    color: #fff;
+    background-color: var(--main-color);
+    font-family: "Dana";
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.banner__content--text1::before,
+.banner__content--text1::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: white;
+    border: 3px solid black;
+}
+
+/* بالا-چپ */
+.banner__content--text1::before {
+    top: -7px;
+    left: -7px;
+}
+
+/* بالا-راست */
+.banner__content--text1::after {
+    top: -7px;
+    right: -7px;
+}
+
+.banner__content--text1 span::before,
+.banner__content--text1 span::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: white;
+    border: 3px solid black;
+    position: absolute;
+}
+
+/* پایین-چپ */
+.banner__content--text1 span::before {
+    bottom: -7px;
+    left: -7px;
+}
+
+/* پایین-راست */
+.banner__content--text1 span::after {
+    bottom: -7px;
+    right: -7px;
+}
+
+
+/* پنج تا کارت و نماد */
+
+
+.banner__content--text-cart {
+    background-color: #5c5c5c;
+    border-radius: 100%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%);
+
+    margin-top: 85px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 125px;
+}
+
+
+
+.banner__content--cart {}
+
+
+
+.banner__content--cart-image {
+    text-align: center;
+    align-items: center;
+    background-color: #F8F8F8;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border: 3px solid #252525;
+    border-radius: 16px;
+    text-align: center;
+    padding: 20px 20px;
+
+}
+
+.banner__content--cart-title {
+    margin-top: 15px;
+    color: #252525;
+    text-align: center;
+    font-family: "Dana";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
 }

@@ -9,11 +9,6 @@
     box-sizing: border-box;
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 
 :root {
     --main-color: #2FB188;
@@ -123,16 +118,20 @@ summary {
 }
 
 .header {
+    width: 100%;
+  max-width: 1440px;
     display: flex;
-    align-content: center;
+    /* align-content: center; */
     align-items: center;
     justify-content: space-between;
     padding-top: 4rem;
-    padding-right: 9.9rem;
-    padding-left: 9.9rem;
+    /* padding-right: 9.9rem;
+    padding-left: 9.9rem; */
+    /* تغییر سایز */
+    padding-right: 4rem;
+    padding-left: 4rem;
     border-radius: 2rem;
-    flex-wrap: nowrap;
-    max-width: 100%;
+    flex-wrap: wrap;
     margin: 0 auto;
 }
 
@@ -140,23 +139,26 @@ summary {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    /* width: 124.3rem;
-    height: 5.6rem; */
-
     font-family: "Dana";
     font-weight: 400;
     line-height: normal;
     color: #000;
     font-size: 1.8rem;
     gap: 4.8rem;
-    padding-right: 16rem;
+    padding-right: 8rem;
+    /* تغییر از 16رم */
+
+
 }
 
 
 .header__nav-item {
+    width: 100%;
+    /* width: 14rem; */
     display: flex;
+    justify-content: center;
     align-items: center;
+    flex-wrap: nowrap;
 }
 
 .header__nav-item img {
@@ -178,7 +180,7 @@ summary {
     transform: translateX(-50%);
     width: 4.1rem;
     height: 0.2rem;
-    border-radius: 0.4rem;
+    /* border-radius: 0.4rem; */
     background-color: #1FA55D;
     border-radius: 1.6rem;
 }
@@ -191,12 +193,15 @@ summary {
 }
 
 .header__logo-name {
+    
+    display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 
 .header__logo-nameEN {
-    align-items: center;
+    /* align-items: center; */
     font-family: "Dana";
     font-weight: 700;
     line-height: normal;
@@ -208,7 +213,7 @@ summary {
 
 .header__logo-nameFA {
     /* display: flex; */
-    align-items: center;
+    /* align-items: center; */
     font-family: "Dana";
     font-weight: 400;
     line-height: normal;
@@ -224,13 +229,13 @@ summary {
     font-family: "Dana";
     font-weight: 400;
     line-height: normal;
-    /* padding: 1rem 2rem; */
-    padding-right: 15rem;
+    padding-right: 8rem;
+    /* تغییر سایز از 15رم */
     color: #000;
     font-size: 1.6rem;
     font-weight: 400;
     gap: 0.8rem;
-    white-space: nowrap;
+    white-space: wrap;
     cursor: pointer;
 }
 
@@ -240,7 +245,10 @@ summary {
 
 
 .header__search {
-    padding-right: 7rem;
+    display: flex;
+    align-items: center;
+    gap: 7rem;
+    /* padding-right: 7rem; */
     cursor: pointer;
 }
 
@@ -254,6 +262,13 @@ summary {
     opacity: 0;
     /* position: absolute; */
     pointer-events: none;
+}
+
+
+/* banner */
+
+.banner {
+    text-align: center;
 }
 
 
@@ -385,8 +400,7 @@ summary {
     font-weight: 400;
     font-size: 5rem;
     justify-self: center;
-    align-items: center;
-
+    padding-top: 0.4rem;
 }
 
 .banner__content--text1::before,
@@ -438,37 +452,23 @@ summary {
 
 
 .banner__content--text-cart {
+    width: 100%;
+    height: 12.6rem;
     display: flex;
     justify-content: center;
     padding-top: 8.3rem;
     background-color: #ffffff;
-    border-radius: 100%;
-    
-    background: linear-gradient(180deg, rgba(196, 94, 94, 0) 0%),
-        url("../assets/Images/Line.svg");
     gap: 12.5rem;
 
+    /* border-radius: 100%; */
+    /* background: linear-gradient(180deg, rgba(196, 94, 94, 0) 0%); */
+    /* url("../assets/Images/Line.svg"); */
 
-    background-position: center;
+    background-image: url("../assets/Images/Line.svg");
+    background-position: center  12.5rem;
     background-repeat: no-repeat;
-
-    width: 82.3rem;
-    height: 0.1rem;
-    top: 200rem;
 }
 
-
-
-.banner__content--cart {
-    display: flex;
-    align-items: center;
-    /* justify-content: start; */
-    /* flex-direction: row; */
-    /* direction: rtl; */
-    width: 8rem;
-    height: 8rem;
-    gap: 12.5rem;
-}
 
 
 
@@ -486,9 +486,10 @@ summary {
 }
 
 .banner__content--cart-title {
+    width: 9.6rem;
     margin-top: 1.5rem;
     color: #252525;
-    text-align: center;
+     text-align: center;
     font-family: "Dana";
     font-size: 1.6rem;
     font-weight: 400;

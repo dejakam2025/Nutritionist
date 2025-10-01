@@ -1,140 +1,176 @@
 <!DOCTYPE html>
 <html lang="fa">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nutritionist</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-
-<body>
-    <div class=BG>
-        <!-- header -->
-        <div class="container">
-            <header class="header">
-                <div class="header__logo">
-                    <img src="../assets/Images/capsol.svg" alt="logo" />
-                    <div class="header__logo-name">
-                        <p class="header__logo-nameEN">Parvin Mahboubian</p>
-                        <p class="header__logo-nameFA">پروین محبوبیان-کارشناس تغذیه
-                    </div>
-                </div>
-
-                <!-- end logo -->
-                <!-- navbar -->
-
-                <ul class="header__nav">
-                    <li>
-                        <a class="header__nav-item header__nav-item--active" href="#"> خانه </a>
-                    </li>
-                    <li><a class="header__nav-item" href="#"> مقالات آموزشی <img src="../assets/Images/felash.svg"
-                                alt=""> </a></li>
-                    <li><a class="header__nav-item" href="#"> رژیم غذایی <img src="../assets/Images/felash.svg" alt="">
-                        </a></li>
-                    <li><a class="header__nav-item" href="#">درباره من</a> </li>
-                </ul>
-
-                <!-- register -->
-                <div class="header__register">
-                    <img src="../assets/Images/user.svg" alt="user" />
-                    <a class="header__register-btn" href="#">ورود | ثبت نام</a>
-                </div>
-                <!-- end rigester -->
-
-                <form class="header__search" action="/search" method="GET">
-                    <input type="search" name="query" placeholder="جستوجو.." />
-                    <img src="../assets/Images/search.svg" alt="Search">
-                </form>
-                <!-- end search -->
-            </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>رژیم‌های غذایی</title>
+  </head>
+  <body>
+    <!-- <div class="container">
+      <div class="tytle">
+        <img class="tytle__circle" src="../assets/image/circle.svg" alt="" />
+        <h2 class="tytle__text">انواع رژیم های غذایی</h2>
+        <img class="tytle__vector" src="../assets/image/s.svg" alt="" />
+      </div>
+      </div> -->
+      <section class="section-Information">
+        <div class="section-header">
+            <div class="header-title">
+                <span class="circle"></span>
+                <p class="title">
+                    ویژگی هایی برای راحتی شما !
+                </p>
+            </div>
+            <div class="address">
+                <span class="connect">ارتباط سریع:</span><span class="tell">09037801620</span>
+                <i class="bi bi-telephone"></i>
+            </div>
         </div>
-        <!-- end header -->
-
-        <div class="container">
-            <div class="banner">
-                <div class="banner__content">
-
-                    <div class="banner__content--taghziye">
-                        <div class="banner__content--title1">تغذیه</div>
-                    </div>
-                    <div class="banner__content--circle1"></div>
-                    <div class="banner__content--dash1"></div>
-
-                    <img src="../assets/Images/Doctor.png" alt="Doctor" class="banner__content--profile">
-
-                    <div class="banner__content--varzesh">
-                        <div class="banner__content--title2">ورزش</div>
-                    </div>
-                    <div class="banner__content--dash2"></div>
-                    <div class="banner__content--circle2"></div>
-                </div>
-
-                <div class="container">
-                    <div class="banner__content--text">تجربه رژیم های غذایی
-
-                    </div>
-
-
-                    <div class="container">
-                        <div class="banner__content-containtext">
-                            <div class="banner__content--text1">
-                                <span></span>
-                                متفاوت و سالم!
-                            </div>
-                            <div class="banner__content--text-cart">
-                                <div class="banner__content--cart">
-                                    <a href="#">
-                                        <img class="banner__content--cart-image" src="../assets/Images/weight.svg"
-                                            alt="کاهش وزن">
-                                        <h4 class="banner__content--cart-title">کاهش وزن</h4>
-                                    </a>
-                                </div>
-                                <div class="banner__content--cart">
-                                    <a href="#">
-                                        <img class="banner__content--cart-image" src="../assets/Images/food.svg"
-                                            alt="افزایش وزن">
-                                        <h4 class="banner__content--cart-title">افزایش وزن</h4>
-                                    </a>
-                                </div>
-                                <div class="banner__content--cart">
-                                    <a href="#">
-                                        <img class="banner__content--cart-image" src="../assets/Images/fitness.svg"
-                                            alt="  ورزشی">
-                                        <h4 class="banner__content--cart-title"> ورزشی</h4>
-                                    </a>
-                                </div>
-                                <div class="banner__content--cart">
-                                    <a href="#">
-                                        <img class="banner__content--cart-image" src="../assets/Images/baby.svg"
-                                            alt=" دوران بارداری">
-                                        <h4 class="banner__content--cart-title"> دوران بارداری</h4>
-                                    </a>
-                                </div>
-                                <div class="banner__content--cart">
-                                    <a href="#">
-                                        <img class="banner__content--cart-image" src="../assets/Images/pill.svg"
-                                            alt=" انواع بیماری ها">
-                                        <h4 class="banner__content--cart-title"> انواع بیماری ها</h4>
-                                    </a>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-
-
-
-                </div>
-
-
-
+        <div class="section-main">
+            <div class="box box-1">
+                <i class="bi bi-fork-knife"></i>
+                <p class="title">طراحی  رژیم بر اساس ذایقه غذایی</p>
+                <p class="content">این که چی دوست داری , خیلی مهمه!</p>
             </div>
-            <div class=" ">
-
+            <div class="box box-2">
+                <i class="bi bi-wallet2"></i>
+                <p class="title">طراحی رژیم بر اساس سفره خانواده</p>
+                <p class="content">طراحی رژیم بر اساس توان اقتصادی خانواده</p>
             </div>
-        
-</body>
+            <div class="box box-3">
+                <i class="bi bi-headset"></i>
+                <p class="title">پشتیبانی همه روزه</p>
+                <p class="content">ارتباط از طریق واتساپ و تلگرام</p>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+      <div class="tytle">
+        <img class="tytle__circle" src="../assets/image/circle.svg" alt="" />
+        <h2 class="tytle__text">انواع رژیم های غذایی</h2>
+        <img class="tytle__vector" src="../assets/image/s.svg" alt="" />
+      </div>
+      <div class="group">
+        <div class="card card1">
+          <h5 class="card__tytle">رژیم کاهش وزن</h5>
+          <a class="card__button" href="">
+            <span>مشاهده جزئیات</span>
+            <img src="../assets/image/sign.svg" alt="علامت" />
+          </a>
+          <img class="card__image" src="../assets/image/1.svg" alt="" />
+        </div>
+        <div class="card card2">
+          <h5 class="card__tytle">رژیم افزایش وزن</h5>
+          <a class="card__button" href="">
+            <span>مشاهده جزئیات</span>
+            <img src="../assets/image/sign.svg" alt="علامت" />
+          </a>
+          <img class="card__image" src="../assets/image/2.svg" alt="" />
+        </div>
+        <div class="card card3">
+          <h5 class="card__tytle">رژیم ورزشی</h5>
+          <a class="card__button" href="">
+            <span>مشاهده جزئیات</span>
+            <img src="../assets/image/sign.svg" alt="علامت" />
+          </a>
+          <img class="card__image" src="../assets/image/3.svg" alt="" />
+        </div>
+        <div class="card card4">
+          <h5 class="card__tytle">رژیم بارداری</h5>
+          <a class="card__button" href="">
+            <span>مشاهده جزئیات</span>
+            <img src="../assets/image/sign.svg" alt="علامت" />
+          </a>
+          <img class="card__image" src="../assets/image/4.svg" alt="" />
+        </div>
+        <div class="card card5">
+          <h5 class="card__tytle">رژیم کودکان و نوجوانان</h5>
+          <a class="card__button" href="">
+            <span>مشاهده جزئیات</span>
+            <img src="../assets/image/sign.svg" alt="علامت" />
+          </a>
+          <img class="card__image" src="../assets/image/5.svg" alt="" />
+        </div>
+        <div class="card card6">
+          <h5 class="card__tytle">رژیم بیماری‌های خاص</h5>
+          <a class="card__button" href="">
+            <span>مشاهده جزئیات</span>
+            <img src="../assets/image/sign.svg" alt="علامت" />
+          </a>
+          <img class="card__image" src="../assets/image/6.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="leveles">
+        <div class="leveles__right">
+          <span class="right__number"> 4</span>
+          <span class="right__title">مرحله رسیدن به وزن ایده‌آل</span>
 
+          <ul class="right__list">
+            <li class="list__item">
+              <img src="../assets/image/icon1.svg" alt="" />
+              <span>1. بررسی سابقه رژیم‌های قدیمی</span>
+            </li>
+            <li class="list__item">
+              <img src="../assets/image/icon2.svg" alt="" />
+              <span>2. شناخت بیمار و بررسی بیماری‌ها</span>
+            </li>
+            <li class="list__item">
+              <img src="../assets/image/icon3.svg" alt="" />
+              <span>3. تجویز داروها و آنالیز بیمار</span>
+            </li>
+            <li class="list__item">
+              <img src="../assets/image/icon4.svg" alt="" />
+              <span>4. دریافت برنامه غذایی نهایی</span>
+            </li>
+          </ul>
+        </div>
+        <div class="leveles__left">
+          <div class="left__box">
+            <img class="box__line" src="../assets/image/bentline.svg" alt="" />
+
+            <div class="box__step box__step--one">
+              <div class="step__icon">
+                <img src="../assets/image/icon1.svg" alt="" />
+              </div>
+              <div class="step__number">
+                <span>1</span>
+              </div>
+            </div>
+
+            <div class="box__step box__step--two">
+              <div class="step__number">
+                <span>2</span>
+              </div>
+              <div class="step__icon">
+                <img src="../assets/image/icon2.svg" alt="" />
+              </div>
+            </div>
+
+            <div class="box__step box__step--three">
+              <div class="step__icon">
+                <img src="../assets/image/icon3.svg" alt="" />
+              </div>
+              <div class="step__number">
+                <span>3</span>
+              </div>
+            </div>
+
+            <div class="box__step box__step--four">
+              <div class="step__number">
+                <span>4</span>
+              </div>
+              <div class="step__icon">
+                <img src="../assets/image/icon4.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="emp"></div>
+    </div>
+    
+  </body>
 </html>

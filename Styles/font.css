@@ -130,3 +130,10 @@
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: "Dana-fanum";
+    src: url("../assets/Font/dana-fanumbold.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 500;
+}

@@ -1,0 +1,160 @@
+@font-face {
+    font-family: "YekanBakh";
+    src: url("../assets/Font/YekanBakhFaNum-Black.woff2")format("woff2");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "YekanBakh";
+    src: url("../assets/Font/YekanBakhFaNum-Bold.woff2")format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "YekanBakh";
+    src: url("../assets/Font/YekanBakhFaNum-ExtraBlack.woff2")format("woff2");
+    font-weight: 950;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "YekanBakh";
+    src: url("../assets/Font/YekanBakhFaNum-ExtraBold.woff2")format("woff2");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "YekanBakh";
+    src: url("../assets/Font/YekanBakhFaNum-Light.woff2")format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "YekanBakh";
+    src: url("../assets/Font/YekanBakhFaNum-Regular.woff2")format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "YekanBakh";
+    src: url("../assets/Font/YekanBakhFaNum-SemiBold.woff2")format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "YekanBakh";
+    src: url("../assets/Font/YekanBakhFaNum-Thin.woff2")format("woff2");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* dana-font */
+
+
+@font-face {
+    font-family: "Dana";
+    src: url("../assets/Font/dana-black.woff2")format("woff2");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Dana";
+    src: url("../assets/Font/dana-bold.woff2")format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Dana";
+    src: url("../assets/Font/dana-demibold.woff2")format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Dana";
+    src: url("../assets/Font/dana-extrabold.woff2")format("woff2");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Dana";
+    src: url("../assets/Font/dana-light.woff2")format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Dana";
+    src: url("../assets/Font/dana-medium.woff2")format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Dana";
+    src: url("../assets/Font/dana-ultrabold.woff2")format("woff2");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Dana-FaNum";
+    src: url("../assets/Font/dana-fanum.woff2")format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* @font-face {
+    font-family: "Dana-FaNum";
+    src: url("../assets/font/Dana-FaNumMedium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+} */
+
+/* tanha font */
+
+@font-face {
+    font-family: "Tanha";
+    src: url("../assets/Font/Tanha.woff2")format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* comforta font  */
+
+@font-face {
+    font-family: "Comfortaa";
+    src: url("../assets/Font/Comfortaa.woff2")format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}

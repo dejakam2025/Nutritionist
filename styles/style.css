@@ -1,0 +1,553 @@
+@import url("./font.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Baloo+Bhaijaan+2:wght@400..800&family=El+Messiri:wght@400..700&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Noto+Naskh+Arabic:wght@400..700&family=Noto+Sans+Arabic:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Vazirmatn:wght@100..900&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
+
+/* ریست کامل همه عناصر */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. تنظیمات پایه برای html و body */
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-size: 62.5%; /* 1rem ==> 10px */
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  font-family: YekanBakh;
+  background-color: #fff;
+  color: #5c5c5c;
+  direction: rtl;
+  height: 100%;
+  width: 100%;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    /* font-family: "Noto Naskh Arabic", serif; */
+}
+
+.section-Information {
+    background-color: #222539;
+    margin: 30px 0px;
+    padding-top: 4.3rem;
+  }
+
+.section-Information .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-Information .section-header .header-title {
+    display: flex;
+    align-items: center;
+    margin-right: 80px;
+    /* transition: all .7s; */
+}
+
+.section-Information .section-header .header-title .title {
+    font-family: "Tanha";
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    /* transition: all .7s; */
+}
+
+.section-Information .section-header .header-title .circle {
+    width: 15px;
+    height: 15px;
+    background-color: #2FB188;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.section-Information .section-header .address {
+    font-family: "Dana";
+    font-weight: 500;
+    margin-left: 80px;
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    border: 2px solid white;
+    padding: 11px 8px;
+    border-radius: 5px;
+    /* transition: all .5s; */
+
+    span {
+        padding: 0px 5px;
+    }
+
+    i {
+        padding-right: 5px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .connect {
+        font-size: 18px;
+    }
+
+    .tell {
+      font-family: "Dana-FaNum";
+        font-size: 14px;
+        cursor: pointer;
+    }
+}
+
+/* .section-Information .section-header .address:hover{
+    color: black;
+    background-color: white;
+} */
+.section-Information .section-main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 40px;
+
+
+    .box {
+        background-color: #32364E;
+        margin-bottom: 40px;
+
+        width: 25%;
+        border-radius: 10px;
+        cursor: pointer;
+
+        /* transition: all .5s; */
+
+        i {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 70px;
+            height: 70px;
+            background-color: #222539;
+            font-size: 28px;
+            color: #2FB188;
+            font-weight: bold;
+            border-radius: 50%;
+            margin: 15px 40% 20px 50%;
+        }
+
+        .title,
+        .content {
+            font-family: "Dana";
+            line-height:2.5;
+            text-align: center;
+            color: white;
+            /* transition: all .7s; */
+        }
+
+        .title {
+            margin-top: 30px;
+            font-size: 19px;
+            font-weight: 550;
+        }
+
+        .content {
+            font-size: 16px;
+            margin-top: -8px;
+            font-weight: 200;
+        }
+    }
+}
+
+/* .box:hover{
+    box-shadow: 0px 0px 12px 2px #475ca8;
+} */
+@media screen and (max-width:1400px) {
+    .section-Information .section-main .box .title {
+        font-size: 16px;
+    }
+
+    .section-Information .section-main .box .content {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .section-Information .section-main {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+
+        .box {
+            width: 90%;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+    }
+}
+
+@media screen and (max-width:750px) {
+    .section-Information .section-header {
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+    }
+
+    .section-Information .section-header .address {
+        width: 35%;
+        margin-right: 80px;
+    }
+}
+
+@media screen and (max-width:586px) {
+    .section-Information .section-header .address {
+        width: 70%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .section-Information .section-main {
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+    }
+}
+
+@media screen and (max-width:490px) {
+    .section-Information .section-header .address {
+        width: 80%;
+        margin-right: 25px;
+    }
+
+    .section-Information .section-header .header-title {
+        margin-right: 30px;
+    }
+
+    .section-Information .section-header .header-title .title {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .section-Information .section-header .header-title .title {
+        font-size: 22px;
+    }
+}
+.container {
+  width: 100%;
+  padding: 0 1rem;
+  margin: 0 auto;
+  background-color: #ffffff;
+  /* margin-left: auto;
+  margin-right: auto; */
+  /* position: relative; */
+  /* top: 132.2rem; */
+}
+.tytle {
+  display: flex;
+  width: auto;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+}
+.tytle__circle {
+  /* padding-right: 10.8rem; */
+  margin: 3rem 11rem 9rem 0.6rem;
+}
+.tytle__text {
+  color: #252525;
+  text-align: right;
+  -webkit-text-stroke-width: 0.05rem;
+  -webkit-text-stroke-color: #252525;
+  font-family: "Tanha";
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 2.4rem 0rem 8.2rem 83.1rem;
+}
+.tytle__vector {
+  margin: 0rem 0rem 5.7rem 8.7rem;
+}
+.group {
+  width: 121.1rem;
+  margin: 0 auto;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6.405rem 5.647rem;
+}
+.card {
+  background-color: #2fb188;
+  width: 36.6rem;
+  height: 17.4rem;
+  border-radius: 1rem;
+  border: 5px solid #222539;
+  position: relative;
+  overflow: hidden;
+}
+.card__tytle {
+  color: #fff;
+  text-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.25);
+  font-family: Dana;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 5.2rem 2.375rem 0rem;
+}
+.card__button {
+  width: 13.7rem;
+  height: 3rem;
+  border-radius: 0.8rem;
+  border: 0.1rem solid #fff;
+  margin: 1.2rem 2.175rem;
+  display: flex;
+}
+.card__button span {
+  color: #fff;
+  font-family: Dana;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 00.5rem 1.1rem 0.4rem 0.9rem;
+}
+.card__button img {
+  width: 1.9rem;
+  height: 1.9rem;
+  margin: 0.5rem 0rem 0.5rem 0.4rem;
+  padding: 0.534rem 0.475rem 0.534rem 0.475rem;
+}
+.card__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.leveles {
+  display:flex;
+  justify-content: space-between;
+  width: 120.9rem;
+  height: 57.2rem;
+  /* padding: 0rem 10rem 6.7rem 13.1rem; */
+  margin: 12.3rem auto;
+  /* position: relative; */
+}
+
+.leveles__left{
+align-self: flex-end;
+}
+
+
+.right__number {
+  width: 7.5rem;
+  text-align: center;
+  color: black;
+  font-size: 100px;
+  font-family: "Dana-FaNum";
+  font-weight: 700;
+  word-wrap: break-word;
+  margin-left: 3rem;
+  position: relative;
+  z-index: 2;
+}
+.right__number::before {
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  right: 1.3rem;
+  top: 3.3rem;
+  width: 8.2rem;
+  height: 8.2rem;
+  background-color: #2ea07b3b;
+  border-radius: 8.2rem;
+}
+
+.right__title {
+  color: #252525;
+  text-align: right;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #252525;
+  font-family: "Tanha";
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 3.7rem;
+  
+}
+.right__list {
+ margin-top: 8rem;
+ margin-right: 1rem;
+}
+.list__item{
+  color: #000;
+  text-align: right;
+  font-family: "Dana-FaNum";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 550;
+  line-height: 7rem;
+  display: flex;
+  align-items: center;
+  gap: 1.4rem; /* فاصله بین آیکن و متن */
+}
+.list__item img {
+  width: 5.2rem;
+  height: 5.2rem;
+  background-color: #f8f8f8;
+  border: 0.12rem solid black;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.left__box {
+width: 53.4rem;
+height: 46.1rem;
+border-radius: 38px;
+background: #2FB188;
+box-shadow: 12px 18px 0 0 #222539;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+}
+.box__line{
+  transform: rotate(3.089deg);
+}
+
+.box__step{
+  position: absolute;
+  display: flex;
+  gap: 1.475rem;
+}
+
+.box__step--one{
+  top: 33.2rem;
+  right: 39.8rem;
+}
+.box__step--two{
+top: 27.1rem;
+left: 37.7rem;
+}
+
+.box__step--three{
+  top: 11.6rem;
+  right: 37.6rem;
+}
+.box__step--four{
+  top: 5.5rem;
+  left: 38.7rem;
+}
+ .step__number{
+  display: flex;
+  align-items: center;
+ }
+
+.step__number span{
+color: #252525;
+ font-size: 30px;
+ font-family: "Dana-FaNum";
+ font-weight: 400;
+ line-height: 63.83px;
+ word-wrap: break-word;
+  align-self: flex-start;
+  z-index: 2;
+  position: relative;
+}
+.step__number span::before{
+  content: " ";
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1rem;
+  width:1.7rem ;
+  height:1.7rem ;
+  z-index: -1;
+  background-image: url("../assets/image/circular.svg");
+  background-repeat: no-repeat;
+}
+.step__icon img{
+  width: 6.1rem;
+  height: 6.1rem;
+  background-color: #f8f8f8;
+  border-radius: 1rem;
+/* margin: auto auto; */
+padding: 1.2rem;
+}
+
+.emp{
+  height: 6rem;
+  width: auto;
+}
